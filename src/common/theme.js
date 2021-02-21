@@ -3,6 +3,11 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const defaultTheme = createMuiTheme();
 
 const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#6D9B12",
+    },
+  },
   overrides: {
     MuiButton: {
       root: {
@@ -16,6 +21,7 @@ const theme = createMuiTheme({
       sizeSmall: {
         width: 120,
         height: 40,
+        marginLeft: 30,
       },
       containedSecondary: {
         backgroundColor: "#6D9B12",
@@ -82,10 +88,36 @@ const theme = createMuiTheme({
         lineHeight: "16px",
       },
     },
-
     MuiTextField: {
       root: {
-        width: 300,
+        width: 550,
+        marginBottom: 68,
+      },
+    },
+    MuiOutlinedInput: {
+      root: {
+        borderRadius: 6,
+        backgroundColor: "#EFEFEF",
+      },
+      notchedOutline: {
+        borderColor: "#EFEFEF",
+      },
+    },
+    MuiFormLabel: {
+      root: {
+        color: "#000000",
+        transform: 0,
+      },
+    },
+    MuiInputLabel: {
+      outlined: {
+        transform: "none",
+        position: "static",
+        marginBottom: 10,
+        shrink: {
+          transform: "none",
+          color: "red",
+        },
       },
     },
   },

@@ -5,7 +5,6 @@ import Box from "@material-ui/core/Box";
 export default function Buttons() {
   return (
     <Box>
-      <h2>Buttons</h2>
       <Box m={3}>
         <Button variant="contained" size="large" color="secondary">
           Sign Up
