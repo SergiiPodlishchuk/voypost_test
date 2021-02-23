@@ -5,15 +5,12 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
 import "fontsource-roboto";
 
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-
 import theme from "./common/theme.js";
 
 import Buttons from "./components/Buttons/Buttons";
 import TextFields from "./components/TextFields/TextFields";
 import TypographyComp from "./components/Typography_comp/Typography_comp";
+import SignUp from "./components/SignUp/SignUp";
 
 function App() {
   return (
@@ -21,20 +18,26 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <nav>
-          <Link to="/buttons" className="route">
-            Buttons
+          <Link to="/story-book" className="route">
+            story-book
           </Link>
-          <Link to="/textfield" className="route">
-            TextFields
-          </Link>
-          <Link to="/typography" className="route">
-            Typography
+          <Link to="/sign-up" className="route">
+            sign-up
           </Link>
         </nav>
         <Switch>
-          <Route path="/buttons" exact component={Buttons} />
-          <Route path="/textfield" component={TextFields} />
-          <Route path="/typography" component={TypographyComp} />
+          <Route
+            path="/story-book"
+            exact
+            component={() => (
+              <>
+                <Buttons />
+                <TextFields />
+                <TypographyComp />
+              </>
+            )}
+          />
+          <Route path="/sign-up" component={SignUp} />
         </Switch>
       </ThemeProvider>
     </Suspense>

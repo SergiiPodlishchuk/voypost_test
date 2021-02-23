@@ -50,6 +50,7 @@ const theme = createMuiTheme({
         fontWeight: "700",
         lineHeight: "37px",
         marginBottom: "24px",
+        // textAlign:"center"
       },
       h3: {
         fontSize: "28px",
@@ -99,6 +100,7 @@ const theme = createMuiTheme({
         borderRadius: 6,
         backgroundColor: "#EFEFEF",
       },
+
       notchedOutline: {
         borderColor: "#EFEFEF",
       },
