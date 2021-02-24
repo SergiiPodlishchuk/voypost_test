@@ -5,6 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
 import "fontsource-roboto";
 
+import { Container } from "@material-ui/core";
 import theme from "./common/theme.js";
 
 import Buttons from "./components/Buttons/Buttons";
@@ -16,29 +17,31 @@ function App() {
   return (
     <Suspense fallback={<p>Loading</p>}>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <nav>
-          <Link to="/story-book" className="route">
-            story-book
-          </Link>
-          <Link to="/sign-up" className="route">
-            sign-up
-          </Link>
-        </nav>
-        <Switch>
-          <Route
-            path="/story-book"
-            exact
-            component={() => (
-              <>
-                <Buttons />
-                <TextFields />
-                <TypographyComp />
-              </>
-            )}
-          />
-          <Route path="/sign-up" component={SignUp} />
-        </Switch>
+        <Container maxWidth="sm">
+          <CssBaseline />
+          <nav>
+            <Link to="/story-book" className="route">
+              story-book
+            </Link>
+            <Link to="/sign-up" className="route">
+              sign-up
+            </Link>
+          </nav>
+          <Switch>
+            <Route
+              path="/story-book"
+              exact
+              component={() => (
+                <>
+                  <Buttons />
+                  <TextFields />
+                  <TypographyComp />
+                </>
+              )}
+            />
+            <Route path="/sign-up" component={SignUp} />
+          </Switch>
+        </Container>
       </ThemeProvider>
     </Suspense>
   );

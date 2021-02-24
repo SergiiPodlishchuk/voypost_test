@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-const defaultTheme = createMuiTheme();
+// const defaultTheme = createMuiTheme();
 
 const theme = createMuiTheme({
   palette: {
@@ -13,7 +13,6 @@ const theme = createMuiTheme({
       root: {
         width: 133,
         height: 50,
-        marginLeft: 30,
       },
       sizeLarge: {
         width: 270,
@@ -21,7 +20,6 @@ const theme = createMuiTheme({
       sizeSmall: {
         width: 120,
         height: 40,
-        marginLeft: 30,
       },
       containedSecondary: {
         backgroundColor: "#6D9B12",
@@ -31,6 +29,9 @@ const theme = createMuiTheme({
       },
       colorInherit: {
         backgroundColor: "#E5E5E5",
+      },
+      label: {
+        textTransform: "none",
       },
     },
     MuiTypography: {

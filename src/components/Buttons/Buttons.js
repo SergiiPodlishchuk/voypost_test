@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 export default function Buttons() {
   return (
     <Box>
-      <Box m={3}>
+      <Box mb={3} display="flex" justifyContent="space-between" width={550}>
         <Button variant="contained" size="large" color="secondary">
           Sign Up
         </Button>
@@ -16,7 +16,7 @@ export default function Buttons() {
           Sign Up
         </Button>
       </Box>
-      <Box m={3}>
+      <Box mb={3} display="flex" justifyContent="space-between" width={550}>
         <Button variant="contained" size="large" color="primary">
           Sign Up
         </Button>
@@ -27,7 +27,7 @@ export default function Buttons() {
           Sign Up
         </Button>
       </Box>
-      <Box m={3}>
+      <Box mb={3} display="flex" justifyContent="space-between" width={550}>
         <Button variant="contained" size="large" color="inherit">
           Sign Up
         </Button>
