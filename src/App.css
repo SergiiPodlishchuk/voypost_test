@@ -1,0 +1,11 @@
+.route{
+    display: block;
+    font-size: 20px;
+}
+
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
